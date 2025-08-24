@@ -54,3 +54,36 @@ mod:registerAsset({
         CoreObjectPrefab = "PREFAB_TOP_PART"
     }
 })
+
+
+-- Create an event asset
+mod:registerAsset({
+    DataType = "EVENT",
+    Id = "EVENT_BLOCK_UNLOCK",
+    DaysToFirst = 1,
+    ConditionList = {
+        {
+            DataType = "GAME_CONDITION_BUILDING_BUILT",
+            AssetBuilding = "BUILDING_VILLAGE_CENTRE"
+        }
+    },
+    ActionList = {
+        {
+            DataType = "GAME_ACTION_UNLOCK_BUILDING_LIST",
+            BuildingProgressData = {
+                AssetBuildingList = {
+                    "BLOCK"
+                }
+            }
+        }
+    }
+})
+
+-- Register the event
+mod:overrideAsset({
+    Id = "DEFAULT_BALANCING",
+    EventList = {
+        Action = "APPEND",
+        "EVENT_BLOCK_UNLOCK"
+    }
+})
