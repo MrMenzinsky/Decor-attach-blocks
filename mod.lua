@@ -88,3 +88,11 @@ mod:overrideAsset({
         "EVENT_BLOCK_UNLOCK"
     }
 })
+
+
+-- Try to modify doors to be able to attach to elevated attach_door points
+
+mod:overrideAsset({
+    Id = "BUILDING_PART_MANOR_HOUSE_SIMPLE_MANOR_ENTRANCE",
+    IsAlwaysGrounded = false
+})
