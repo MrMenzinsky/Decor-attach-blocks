@@ -15,7 +15,7 @@ mod:registerAsset({
     Id = "BLOCK",
     Name = "BLOCK_NAME",
     Description = "BLOCK_DESC",
-    BuildingType = "Decoration",
+    BuildingType = "DECORATION",
     AssetCoreBuildingPart = "BLOCK_PART"
 })
 
@@ -25,6 +25,7 @@ mod:registerAsset({
 mod:registerAsset({
     DataType = "BUILDING_PART",
     Id = "BLOCK_PART",
+    Category = "DECORATION",
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_SCALER",
         CoreObjectPrefab = "PREFAB_ROOT_PART",
