@@ -92,7 +92,23 @@ mod:overrideAsset({
 
 -- Try to modify doors to be able to attach to elevated attach_door points
 
-mod:overrideAsset({
-    Id = "BUILDING_PART_MANOR_HOUSE_SIMPLE_MANOR_ENTRANCE",
-    IsAlwaysGrounded = false
-})
+-- mod:overrideAsset({
+--     Id = "BUILDING_PART_MANOR_HOUSE_SIMPLE_MANOR_ENTRANCE",
+--     IsAlwaysGrounded = false
+-- })
+
+
+
+local door_asset = foundation.findAsset("BUILDING_PART_MANOR_HOUSE_SIMPLE_MANOR_ENTRANCE")
+if door_asset == nil then
+    mod:log("door_asset is nil.")
+else
+    mod:log("door_asset exists.")
+end
+
+local door_gameobject = foundation.findGameObject("BUILDING_PART_MANOR_HOUSE_SIMPLE_MANOR_ENTRANCE")
+if door_gameobject == nil then
+    mod:log("door_gameobject is nil.")
+else
+    mod:log("door_gameobject exists.")
+end
