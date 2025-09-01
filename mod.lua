@@ -10,9 +10,9 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part", "PREFAB_
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Tiling_Part", "PREFAB_TILING_PART")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Top_Part", "PREFAB_TOP_PART")
 
-mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Attach_Major", {
+mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Attach_Inner_Top", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
-    AttachNodeTypeList = {"MAJOR"},
+    AttachNodeTypeList = {"INNER_TOP"},
     MultipleOrientationCount = 4
 })
 
