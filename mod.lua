@@ -15,15 +15,25 @@ mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/At
     MultipleOrientationCount = 4
 })
 
+-- Register custom number swatches
+mod:registerAssetId("icons/Icon_Button_Swatch_1.png", "ICON_BUTTON_RECOLOR_SWATCH_1", "ATLAS_CELL")
+mod:registerAssetId("icons/Icon_Button_Swatch_2.png", "ICON_BUTTON_RECOLOR_SWATCH_2", "ATLAS_CELL")
+mod:registerAssetId("icons/Icon_Button_Swatch_3.png", "ICON_BUTTON_RECOLOR_SWATCH_3", "ATLAS_CELL")
+mod:registerAssetId("icons/Icon_Button_Swatch_4.png", "ICON_BUTTON_RECOLOR_SWATCH_4", "ATLAS_CELL")
+mod:registerAssetId("icons/Icon_Button_Swatch_5.png", "ICON_BUTTON_RECOLOR_SWATCH_5", "ATLAS_CELL")
+mod:registerAssetId("icons/Icon_Button_Swatch_6.png", "ICON_BUTTON_RECOLOR_SWATCH_6", "ATLAS_CELL")
+mod:registerAssetId("icons/Icon_Button_Swatch_7.png", "ICON_BUTTON_RECOLOR_SWATCH_7", "ATLAS_CELL")
+mod:registerAssetId("icons/Icon_Button_Swatch_8.png", "ICON_BUTTON_RECOLOR_SWATCH_8", "ATLAS_CELL")
+
 -- Register material textures
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Tex_Wall_Stone_Rustic_01A_Diff", "WALL_STONE_RUSTIC")
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Tex_Wall_Stone_Rustic_Moss_Diff", "WALL_STONE_RUSTIC_MOSS")
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Tex_Castle_Modest_Wall_Stone_01A_Diff", "CASTLE_MODEST_WALL_STONE")
--- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Castle_Modest_Wall_Stone_Moss", "CASTLE_MODEST_WALL_STONE_MOSS")
--- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Plaster", "WALL_PLASTER")
--- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_LimeBrick_Plaster", "WALL_LIMEBRICK_PLASTER")
--- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Stucco", "WALL_STUCCO")
--- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_WoodPLanks", "WALL_WOODPLANKS")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Wall_Stone_Rustic_01A_Diff.png", "WALL_STONE_RUSTIC")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Wall_Stone_Rustic_Moss_Diff.png", "WALL_STONE_RUSTIC_MOSS")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Castle_Modest_Wall_Stone_01A_Diff.png", "CASTLE_MODEST_WALL_STONE")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Castle_Modest_Wall_Stone_Moss_01A_Diff.png", "CASTLE_MODEST_WALL_STONE_MOSS")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_Plaster_01A_Diff.png", "WALL_PLASTER")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_LimeBrick_Plaster_01A_Diff.png", "WALL_LIMEBRICK_PLASTER")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_Stucco_02A_Diff.png", "WALL_STUCCO")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_WoodPLanks_01A_Diff.png", "WALL_WOODPLANKS")
 
 
 mod:registerAsset({
@@ -32,59 +42,59 @@ mod:registerAsset({
 	MaterialSetList = {
         {
             SetName = "WALL_STONE_RUSTIC",
-            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_BLACK",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_1",
             MaterialList = {
                 "WALL_STONE_RUSTIC"
             }
         },
         {
             SetName = "WALL_STONE_RUSTIC_MOSS",
-            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_BLUE",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_2",
             MaterialList = {
                 "WALL_STONE_RUSTIC_MOSS"
             }
         },
         {
             SetName = "CASTLE_MODEST_WALL_STONE",
-            AssetSelectionButtonImage = "ICON_RESOURCE_BOAR",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_3",
             MaterialList = {
                 "CASTLE_MODEST_WALL_STONE"
             }
-        -- },
-        -- {
-        --     SetName = "",
-        --     AssetSelectionButtonImage = "",
-        --     MaterialList = {
-        --         "CASTLE_MODEST_WALL_STONE_MOSS"
-        --     }
-        -- },
-        -- {
-        --     SetName = "",
-        --     AssetSelectionButtonImage = "",
-        --     MaterialList = {
-        --         "WALL_PLASTER"
-        --     }
-        -- },
-        -- {
-        --     SetName = "",
-        --     AssetSelectionButtonImage = "",
-        --     MaterialList = {
-        --         "WALL_LIMEBRICK_PLASTER"
-        --     }
-        -- },
-        -- {
-        --     SetName = "",
-        --     AssetSelectionButtonImage = "",
-        --     MaterialList = {
-        --         "WALL_STUCCO"
-        --     }
-        -- },
-        -- {
-        --     SetName = "",
-        --     AssetSelectionButtonImage = "",
-        --     MaterialList = {
-        --         "WALL_WOODPLANKS"
-        --     }
+        },
+        {
+            SetName = "CASTLE_MODEST_WALL_STONE_MOSS",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_4",
+            MaterialList = {
+                "CASTLE_MODEST_WALL_STONE_MOSS"
+            }
+        },
+        {
+            SetName = "WALL_PLASTER",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_5",
+            MaterialList = {
+                "WALL_PLASTER"
+            }
+        },
+        {
+            SetName = "WALL_LIMEBRICK_PLASTER",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_6",
+            MaterialList = {
+                "WALL_LIMEBRICK_PLASTER"
+            }
+        },
+        {
+            SetName = "WALL_STUCCO",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_7",
+            MaterialList = {
+                "WALL_STUCCO"
+            }
+        },
+        {
+            SetName = "WALL_WOODPLANKS",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_8",
+            MaterialList = {
+                "WALL_WOODPLANKS"
+            }
         }
     }
 })

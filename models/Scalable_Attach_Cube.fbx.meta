@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta id="d1ab4331-1f06-45ec-b651-60b3fd87998f">
+	<meta id="f6602f2e-8bf2-4883-9e69-ba8bd205f964" type="group" folder="true" name="Materials">
+		<meta id="1c2e1d3e-205f-4e08-a03a-5366d18e3e21" name="Mat_Wall_Stone_Rustic_Moss_Diff.png"/>
+		<meta id="81265a2a-cd4b-432a-be2a-4f12f97187ba" name="Mat_Castle_Modest_Wall_Stone_Moss_01A_Diff.png"/>
+		<meta id="2427dfde-def5-449a-88c5-d23d7db57032" name="Mat_Wall_Stone_Rustic_01A_Diff.png"/>
+		<meta id="44e3bdf2-7689-4bb2-b42c-7ada3e9a7806" name="Mat_Castle_Modest_Wall_Stone_01A_Diff.png"/>
+		<meta id="efdd3205-0a21-4bdf-bd0c-fd9df9339ef6" name="Mat_Gen_Wall_LimeBrick_Plaster_01A_Diff.png"/>
+		<meta id="a2d9d64a-12d3-4b9e-873e-e5c4010bb22e" name="Mat_Gen_Wall_Stucco_02A_Diff.png"/>
+		<meta id="85c20a23-050d-4242-ba23-d9312ef5be4f" name="Mat_Gen_Wall_Plaster_01A_Diff.png"/>
+		<meta id="5de48edd-b16a-4f2f-9004-9399a3b8c043" name="Mat_Gen_Wall_WoodPLanks_01A_Diff.png"/>
+	</meta>
+	<meta id="fc4edca2-3d53-4647-bcc7-e2f533c3a752" type="group" folder="true" name="Meshes">
+		<meta id="e5a7f01a-ec31-468f-9f9d-95ec69de9550" name="Cube_Tex_Wall_Stone_Rustic_01A_Diff.png"/>
+		<meta id="a86a2e28-b936-4a96-8eab-5f0598805a6a" name="Dummy_Texture_01_Tex_Wall_Stone_Rustic_Moss_Diff.png"/>
+		<meta id="2010ffc8-6d12-4c9f-b77a-a674f09ee249" name="Dummy_Texture_02_Tex_Castle_Modest_Wall_Stone_Moss_01A_Diff.png"/>
+		<meta id="96a9d5db-9a01-4113-ac55-c4ade4854893" name="Dummy_Texture_03_Tex_Wall_Stone_Rustic_01A_Diff.png"/>
+		<meta id="facecace-34d9-497f-bd03-fc56bbbabc4a" name="Dummy_Texture_04_Tex_Castle_Modest_Wall_Stone_01A_Diff.png"/>
+		<meta id="6637d927-69c2-47cf-93f5-f4d16eb88158" name="Dummy_Texture_05_Tex_Gen_Wall_LimeBrick_Plaster_01A_Diff.png"/>
+		<meta id="5b2999e6-47c8-4db5-9b13-88bfd433bedd" name="Dummy_Texture_06_Tex_Gen_Wall_Stucco_02A_Diff.png"/>
+		<meta id="9d72b661-f155-4472-a921-f21449ea89c0" name="Dummy_Texture_07_Tex_Gen_Wall_Plaster_01A_Diff.png"/>
+		<meta id="2b4c2c00-b7cf-4fb7-b223-6377e39dc0d3" name="Dummy_Texture_08_Tex_Gen_Wall_WoodPLanks_01A_Diff.png"/>
+	</meta>
+	<meta id="6af25dd2-b01f-40ea-9993-3d97600d0935" name="Prefab">
+		<meta id="4b92840f-e52f-45fc-bd7c-c1e98227881f" name="Root_Part">
+			<meta id="48db3493-aeeb-4285-af53-ebe9dd2b2cf4" name="Attach_Bottom"/>
+			<meta id="c0bbbb57-46da-46d1-9d6f-6ae4594827a6" name="Attach_Top"/>
+			<meta id="5c249ba4-95e8-4e3d-887b-cd6cc5d369b3" name="Attach_Major"/>
+		</meta>
+		<meta id="a209de6b-7593-483d-a7cb-c0f798fb6913" name="Tiling_Part">
+			<meta id="ca79c2c3-67c2-40e5-b318-477d7ced97eb" name="Attach_Top.002"/>
+			<meta id="b5f88b96-8f69-4a21-8351-b7438f77b4c0" name="Attach_Bottom.002"/>
+		</meta>
+		<meta id="f4d9bc4a-8769-4582-811f-d96b2c9b2a36" name="Top_Part">
+			<meta id="024e3cf3-a178-45fe-a61a-4104d7dc4b18" name="Cube"/>
+			<meta id="69f490cf-a5e2-4df4-9689-57c8114bfa5b" name="Attach_Bottom.003"/>
+			<meta id="0f76bebb-f535-44f1-b8ca-516fe5a96e5e" name="Attach_Minor"/>
+			<meta id="bbcd42f2-0ec4-4c39-ac03-dd47b72d5183" name="Attach_Minor.001"/>
+			<meta id="e8016743-1934-419b-af45-699bf75ed256" name="Attach_Minor.002"/>
+			<meta id="5c75678a-5b60-4924-89ec-058d198f1f7f" name="Attach_Minor.003"/>
+			<meta id="75567b86-e7ab-44ea-a0e3-d20e1f4921b6" name="Attach_Top_Minor_Dormer_Chimney"/>
+		</meta>
+		<meta id="18aae027-7e60-46c5-bdad-e914def10160" name="Dummy_Texture_01"/>
+		<meta id="c3fb5bab-e92f-4cef-b154-5fa0c37f1898" name="Dummy_Texture_02"/>
+		<meta id="49e69308-3793-42ba-9ee2-ad00f801df18" name="Dummy_Texture_03"/>
+		<meta id="20ca752f-9da2-4207-99a2-05c19a241ada" name="Dummy_Texture_04"/>
+		<meta id="168a6065-1ffe-46e5-8545-64c205a5126c" name="Dummy_Texture_05"/>
+		<meta id="184b8102-697a-49ef-a057-f364db3e79be" name="Dummy_Texture_06"/>
+		<meta id="5b0ae862-3eab-430f-9f29-2985e582d141" name="Dummy_Texture_07"/>
+		<meta id="ea0a9f4b-a033-44b1-9185-c681b7599c00" name="Dummy_Texture_08"/>
+	</meta>
+</meta>
+<importer type="GamCFbxImporterConfiguration">
+	<WorkFilePath value="utf8:"/>
+	<Md5Checksum value="bb7da5aee0902816d1b65cb7328e5b8e"/>
+	<ModelVersion value="36"/>
+	<Scale value="0.01"/>
+	<PatchMeshOffset value="true"/>
+	<UniqueNodeName value="false"/>
+	<ImportAnimation value="false"/>
+	<IgnoreRootAnimation value="false"/>
+	<FlipXAxis value="true"/>
+	<ZUpSource value="false"/>
+	<MergeDuplicateMeshes value="true"/>
+	<GenerateLod value="false"/>
+	<OverrideExistingLod value="false"/>
+	<NodeConfig type="GenCFbxNodeConfig">
+		<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+		<ChildList>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Bottom"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Top"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Major"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Root_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Top.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Bottom.002"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Tiling_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Bottom.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Top_Minor_Dormer_Chimney"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Top_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_01"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_02"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_03"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_04"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_05"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_06"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_07"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList/>
+				<NodeName value="Dummy_Texture_08"/>
+			</Item>
+		</ChildList>
+		<NodeName value="Prefab"/>
+	</NodeConfig>
+	<MaterialList>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Castle_Modest_Wall_Stone_01A_Diff.png"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Castle_Modest_Wall_Stone_Moss_01A_Diff.png"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Gen_Wall_LimeBrick_Plaster_01A_Diff.png"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Gen_Wall_Plaster_01A_Diff.png"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Gen_Wall_Stucco_02A_Diff.png"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Gen_Wall_WoodPLanks_01A_Diff.png"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Wall_Stone_Rustic_01A_Diff.png"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="00000000-0000-0000-0000-000000000000"/>
+			<MaterialName value="Mat_Wall_Stone_Rustic_Moss_Diff.png"/>
+		</Item>
+	</MaterialList>
+</importer>
+
