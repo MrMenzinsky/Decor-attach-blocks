@@ -10,6 +10,7 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part", "PREFAB_
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Tiling_Part", "PREFAB_TILING_PART")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Top_Part", "PREFAB_TOP_PART")
 
+-- Make so the Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
 mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Attach_Major", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
     MultipleOrientationCount = 4
@@ -35,7 +36,7 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_Lime
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_Stucco_02A_Diff.png", "WALL_STUCCO")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_WoodPLanks_01A_Diff.png", "WALL_WOODPLANKS")
 
-
+-- Register custom swatches for recoloring/changing the texture on the block
 mod:registerAsset({
 	DataType = "MATERIAL_SET_LIST",
 	Id = "BLOCK_MATERIAL_SET_LIST",
@@ -125,7 +126,7 @@ mod:registerAsset({
     },
     BuildingZone = {
         ZoneEntryList = {
-            {
+            {  -- Make the smallest possible collision box so it gets included when double-clicking on adjacent parts
                 Polygon = polygon.createRectangle({DataType = "vec2f", 0.01, 0.01}),
                 Type = {
                     DEFAULT = true,

@@ -1,6 +1,6 @@
 {
     "BLOCK": {
         "BLOCK_NAME": "Scalable block",
-        "BLOCK_DESC": "Scalable block with decoration snapping points."
+        "BLOCK_DESC": "A small scalable block with decoration snapping points for: lanterns, torches, (large) banners, tavern vines, chimneys, dormers, and more. Intended use when building monuments (Manor, Castle, Monastery, Tavern, City Market etc.)."
     }
 }
