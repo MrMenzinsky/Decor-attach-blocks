@@ -16,9 +16,9 @@ mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/At
 })
 
 -- Register material textures
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Stone_Rustic", "WALL_STONE_RUSTIC")
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Stone_Rustic_Moss", "WALL_STONE_RUSTIC_MOSS")
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Castle_Modest_Wall_Stone", "CASTLE_MODEST_WALL_STONE")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Tex_Wall_Stone_Rustic_01A_Diff", "WALL_STONE_RUSTIC")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Tex_Wall_Stone_Rustic_Moss_Diff", "WALL_STONE_RUSTIC_MOSS")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Tex_Castle_Modest_Wall_Stone_01A_Diff", "CASTLE_MODEST_WALL_STONE")
 -- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Castle_Modest_Wall_Stone_Moss", "CASTLE_MODEST_WALL_STONE_MOSS")
 -- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Plaster", "WALL_PLASTER")
 -- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_LimeBrick_Plaster", "WALL_LIMEBRICK_PLASTER")
