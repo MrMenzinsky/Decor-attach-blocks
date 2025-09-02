@@ -38,6 +38,14 @@ mod:registerAsset({
         FillerList = {
             "BLOCK_TILING_PART"
         }
+    },
+    BuildingZone = {
+        ZoneEntryList = {
+            Polygon = polygon.createRectangle({DataType = "vec2f", 1.0, 1.0}),
+            Type = {
+                DEFAULT = true
+            }
+        }
     }
 })
 
