@@ -25,42 +25,11 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Castle_Modest_Wal
 -- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Stucco", "WALL_STUCCO")
 -- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_WoodPLanks", "WALL_WOODPLANKS")
 
-mod:registerAsset({
-    DataType = "BUILDING",
-    Id = "BLOCK",
-    Name = "BLOCK_NAME",
-    Description = "BLOCK_DESC",
-    BuildingType = "DECORATION",
-    AssetCoreBuildingPart = "BLOCK_PART"
-})
 
--- Scaling cube parts
-
--- Root (main) part
 mod:registerAsset({
-    DataType = "BUILDING_PART",
-    Id = "BLOCK_PART",
-    Category = "DECORATION",
-    ConstructorData = {
-        DataType = "BUILDING_CONSTRUCTOR_SCALER",
-        CoreObjectPrefab = "PREFAB_ROOT_PART",
-        EndPart = "BLOCK_TOP_PART",
-        FillerList = {
-            "BLOCK_TILING_PART"
-        }
-    },
-    BuildingZone = {
-        ZoneEntryList = {
-            {
-                Polygon = polygon.createRectangle({DataType = "vec2f", 0.01, 0.01}),
-                Type = {
-                    DEFAULT = true,
-                    NAVIGABLE_PART = true
-                }
-            }
-        }
-    },
-    AssetMaterialSetList = {
+	DataType = "MATERIAL_SET_LIST",
+	Id = "BLOCK_MATERIAL_SET_LIST",
+	MaterialSetList = {
         {
             SetName = "WALL_STONE_RUSTIC",
             AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_BLACK",
@@ -118,6 +87,44 @@ mod:registerAsset({
         --     }
         }
     }
+})
+
+mod:registerAsset({
+    DataType = "BUILDING",
+    Id = "BLOCK",
+    Name = "BLOCK_NAME",
+    Description = "BLOCK_DESC",
+    BuildingType = "DECORATION",
+    AssetCoreBuildingPart = "BLOCK_PART"
+})
+
+-- Scaling cube parts
+
+-- Root (main) part
+mod:registerAsset({
+    DataType = "BUILDING_PART",
+    Id = "BLOCK_PART",
+    Category = "DECORATION",
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_SCALER",
+        CoreObjectPrefab = "PREFAB_ROOT_PART",
+        EndPart = "BLOCK_TOP_PART",
+        FillerList = {
+            "BLOCK_TILING_PART"
+        }
+    },
+    BuildingZone = {
+        ZoneEntryList = {
+            {
+                Polygon = polygon.createRectangle({DataType = "vec2f", 0.01, 0.01}),
+                Type = {
+                    DEFAULT = true,
+                    NAVIGABLE_PART = true
+                }
+            }
+        }
+    },
+    AssetMaterialSetList = "BLOCK_MATERIAL_SET_LIST"
 })
 
 -- Tiling part
