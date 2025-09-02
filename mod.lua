@@ -52,9 +52,10 @@ mod:registerAsset({
     BuildingZone = {
         ZoneEntryList = {
             {
-                Polygon = polygon.createRectangle({DataType = "vec2f", 1.0, 1.0}),
+                Polygon = polygon.createRectangle({DataType = "vec2f", 0.01, 0.01}),
                 Type = {
-                    DEFAULT = true
+                    DEFAULT = true,
+                    NAVIGABLE_PART = true
                 }
             }
         }
