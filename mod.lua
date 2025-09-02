@@ -15,6 +15,16 @@ mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/At
     MultipleOrientationCount = 4
 })
 
+-- Register material textures
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Stone_Rustic", "WALL_STONE_RUSTIC")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Stone_Rustic_Moss", "WALL_STONE_RUSTIC_MOSS")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Castle_Modest_Wall_Stone", "CASTLE_MODEST_WALL_STONE")
+-- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Castle_Modest_Wall_Stone_Moss", "CASTLE_MODEST_WALL_STONE_MOSS")
+-- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Plaster", "WALL_PLASTER")
+-- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_LimeBrick_Plaster", "WALL_LIMEBRICK_PLASTER")
+-- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_Stucco", "WALL_STUCCO")
+-- mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Wall_WoodPLanks", "WALL_WOODPLANKS")
+
 mod:registerAsset({
     DataType = "BUILDING",
     Id = "BLOCK",
@@ -47,6 +57,64 @@ mod:registerAsset({
                     DEFAULT = true
                 }
             }
+        }
+    },
+    AssetMaterialSetList = {
+        {
+            SetName = "WALL_STONE_RUSTIC",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_BLACK",
+            MaterialList = {
+                "WALL_STONE_RUSTIC"
+            }
+        },
+        {
+            SetName = "WALL_STONE_RUSTIC_MOSS",
+            AssetSelectionButtonImage = "ICON_BUTTON_RECOLOR_SWATCH_BLUE",
+            MaterialList = {
+                "WALL_STONE_RUSTIC_MOSS"
+            }
+        },
+        {
+            SetName = "CASTLE_MODEST_WALL_STONE",
+            AssetSelectionButtonImage = "ICON_RESOURCE_BOAR",
+            MaterialList = {
+                "CASTLE_MODEST_WALL_STONE"
+            }
+        -- },
+        -- {
+        --     SetName = "",
+        --     AssetSelectionButtonImage = "",
+        --     MaterialList = {
+        --         "CASTLE_MODEST_WALL_STONE_MOSS"
+        --     }
+        -- },
+        -- {
+        --     SetName = "",
+        --     AssetSelectionButtonImage = "",
+        --     MaterialList = {
+        --         "WALL_PLASTER"
+        --     }
+        -- },
+        -- {
+        --     SetName = "",
+        --     AssetSelectionButtonImage = "",
+        --     MaterialList = {
+        --         "WALL_LIMEBRICK_PLASTER"
+        --     }
+        -- },
+        -- {
+        --     SetName = "",
+        --     AssetSelectionButtonImage = "",
+        --     MaterialList = {
+        --         "WALL_STUCCO"
+        --     }
+        -- },
+        -- {
+        --     SetName = "",
+        --     AssetSelectionButtonImage = "",
+        --     MaterialList = {
+        --         "WALL_WOODPLANKS"
+        --     }
         }
     }
 })
