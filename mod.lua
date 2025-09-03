@@ -130,7 +130,7 @@ mod:registerAsset({
     BuildingZone = {
         ZoneEntryList = {
             {  -- Make the smallest possible collision box so it gets included when double-clicking on adjacent parts
-                Polygon = polygon.createRectangle({DataType = "vec2f", 0.01, 0.01}),
+                Polygon = polygon.createRectangle({ 0.01, 0.01 }),
                 Type = {
                     DEFAULT = true,
                     NAVIGABLE_PART = true
