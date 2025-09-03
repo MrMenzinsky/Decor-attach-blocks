@@ -124,7 +124,7 @@ mod:registerAsset({
             "BLOCK_TILING_PART"
         },
         MiniatureConfig = {
-            CameraPosition = {DataType = "vec3f", 1, 1, 1}
+          CameraPosition = { 0.0, 0.25, -2.0 }
         }
     },
     BuildingZone = {
