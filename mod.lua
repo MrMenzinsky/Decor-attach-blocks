@@ -16,6 +16,12 @@ mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/At
     MultipleOrientationCount = 4
 })
 
+-- Make so the Attach_Minor_Center snapping node can snap at all 8 45 degree angles and isn't forced to its original orientation
+mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Attach_Minor_Center", {
+    DataType = "COMP_BUILDING_ATTACH_NODE",
+    MultipleOrientationCount = 8
+})
+
 -- Register custom number swatches
 mod:registerAssetId("icons/Icon_Button_Swatch_1.png", "ICON_BUTTON_RECOLOR_SWATCH_1", "ATLAS_CELL")
 mod:registerAssetId("icons/Icon_Button_Swatch_2.png", "ICON_BUTTON_RECOLOR_SWATCH_2", "ATLAS_CELL")
@@ -124,7 +130,7 @@ mod:registerAsset({
             "BLOCK_TILING_PART"
         },
         MiniatureConfig = {
-          CameraPosition = { 0.0, 0.25, -2.0 }
+            CameraPosition = { 0.0, 0.25, -2.0 }
         }
     },
     BuildingZone = {
