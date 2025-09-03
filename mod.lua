@@ -166,8 +166,8 @@ mod:registerAsset({
     DaysToFirst = 1,
     ConditionList = {
         {
-            DataType = "GAME_CONDITION_BUILDING_BUILT",
-            AssetBuilding = "BUILDING_VILLAGE_CENTRE"
+            DataType = "GAME_CONDITION_BUILDING_AVAILABLE",
+            AssetBuilding = "BUILDING_DECORATIVE_ROSE_BUSH"
         }
     },
     ActionList = {
