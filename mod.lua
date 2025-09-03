@@ -122,6 +122,9 @@ mod:registerAsset({
         EndPart = "BLOCK_TOP_PART",
         FillerList = {
             "BLOCK_TILING_PART"
+        },
+        MiniatureConfig = {
+            CameraPosition = {DataType = "vec3f", 1, 1, 1}
         }
     },
     BuildingZone = {
