@@ -13,12 +13,6 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Top_Part", "PREFAB_T
 -- Make so the Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
 mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Attach_Major", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
-    MultipleOrientationCount = 4
-})
-
--- Make so the Attach_Minor_Center snapping node can snap at all 8 45 degree angles and isn't forced to its original orientation
-mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Attach_Minor_Center", {
-    DataType = "COMP_BUILDING_ATTACH_NODE",
     MultipleOrientationCount = 8
 })
 
