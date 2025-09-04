@@ -210,7 +210,8 @@ mod:registerAsset({
             "BLOCK_DOUBLE_TILING_ONE_PART"
         },
         MiniatureConfig = {
-            CameraPosition = { 0.0, 0.25, -2.0 }
+            CameraPosition = { 0.0, 0.0, 0.0 },
+            ClipUnderGround = false
         }
     },
     BuildingZone = {
