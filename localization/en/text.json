@@ -2,5 +2,9 @@
     "BLOCK": {
         "BLOCK_NAME": "Scalable block",
         "BLOCK_DESC": "A small scalable block with decoration snapping points for: lanterns, torches, (large) banners, tavern vines, chimneys, dormers, and more. Intended use when building monuments (Manor, Castle, Monastery, Tavern, City Market etc.)."
+    },
+    "BLOCK_DOUBLE": {
+        "BLOCK_DOUBLE_NAME": "Scalable block (double scaling)",
+        "BLOCK_DOUBLE_DESC": "Same as 'Scalable block', but with two scaling arrows. Strongly recommended for greater heights (or if you suffer from lag) as it's optimized to minimize 'tiling' blocks when resizing. Use the scaling arrow that takes 'big' steps to reach approximate target height, then fine tune with the scaling arrow that takes 'small' steps."
     }
 }

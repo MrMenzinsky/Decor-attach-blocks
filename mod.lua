@@ -5,16 +5,32 @@ mod:registerAssetProcessor("models/Scalable_Attach_Cube.fbx", {
     DataType = "BUILDING_ASSET_PROCESSOR"
 })
 
+
 -- Single scaling build parts (root, tiling, top)
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part", "PREFAB_ROOT_PART")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Tiling_Part", "PREFAB_TILING_PART")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Top_Part", "PREFAB_TOP_PART")
 
--- Make so the Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
+-- Make so the Root_Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
 mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Root_Attach_Major", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
     MultipleOrientationCount = 8
 })
+
+
+-- Double scaling build parts (root 1 & 2, tiling 1 & 2, top)
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Double_Root_One_Part", "PREFAB_DOUBLE_ROOT_ONE_PART")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Double_Root_Two_Part", "PREFAB_DOUBLE_ROOT_TWO_PART")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Double_Tiling_One_Part", "PREFAB_DOUBLE_TILING_ONE_PART")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Double_Tiling_Two_Part", "PREFAB_DOUBLE_TILING_TWO_PART")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Double_Top_Part", "PREFAB_DOUBLE_TOP_PART")
+
+-- Make so the Double_Root_One_Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
+mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Double_Root_One_Part/Double_Root_One_Attach_Major", {
+    DataType = "COMP_BUILDING_ATTACH_NODE",
+    MultipleOrientationCount = 8
+})
+
 
 -- Register custom number swatches
 mod:registerAssetId("icons/Icon_Button_Swatch_1.png", "ICON_BUTTON_RECOLOR_SWATCH_1", "ATLAS_CELL")
@@ -35,6 +51,7 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_Plas
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_LimeBrick_Plaster_01A_Diff.png", "WALL_LIMEBRICK_PLASTER")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_Stucco_02A_Diff.png", "WALL_STUCCO")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Materials/Mat_Gen_Wall_WoodPLanks_01A_Diff.png", "WALL_WOODPLANKS")
+
 
 -- Register custom swatches for recoloring/changing the texture on the block
 mod:registerAsset({
@@ -100,21 +117,32 @@ mod:registerAsset({
     }
 })
 
+
 mod:registerAsset({
     DataType = "BUILDING",
     Id = "BLOCK",
     Name = "BLOCK_NAME",
     Description = "BLOCK_DESC",
     BuildingType = "DECORATION",
-    AssetCoreBuildingPart = "BLOCK_PART"
+    AssetCoreBuildingPart = "BLOCK_ROOT_PART"
 })
+
+mod:registerAsset({
+    DataType = "BUILDING",
+    Id = "BLOCK_DOUBLE",
+    Name = "BLOCK_DOUBLE_NAME",
+    Description = "BLOCK_DOUBLE_DESC",
+    BuildingType = "DECORATION",
+    AssetCoreBuildingPart = "BLOCK_DOUBLE_ROOT_ONE_PART"
+})
+
 
 -- Scaling cube parts
 
 -- Root (main) part
 mod:registerAsset({
     DataType = "BUILDING_PART",
-    Id = "BLOCK_PART",
+    Id = "BLOCK_ROOT_PART",
     Category = "DECORATION",
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_SCALER",
@@ -167,6 +195,89 @@ mod:registerAsset({
 })
 
 
+-- Double scaling cube parts
+
+-- Root one (main) part
+mod:registerAsset({
+    DataType = "BUILDING_PART",
+    Id = "BLOCK_DOUBLE_ROOT_ONE_PART",
+    Category = "DECORATION",
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_SCALER",
+        CoreObjectPrefab = "PREFAB_DOUBLE_ROOT_ONE_PART",
+        EndPart = "BLOCK_DOUBLE_ROOT_TWO_PART",
+        FillerList = {
+            "BLOCK_DOUBLE_TILING_ONE_PART"
+        },
+        MiniatureConfig = {
+            CameraPosition = { 0.0, 0.25, -2.0 }
+        }
+    },
+    BuildingZone = {
+        ZoneEntryList = {
+            {  -- Make the smallest possible collision box so it gets included when double-clicking on adjacent parts
+                Polygon = polygon.createRectangle({ 0.01, 0.01 }),
+                Type = {
+                    DEFAULT = true,
+                    NAVIGABLE_PART = true
+                }
+            }
+        }
+    },
+    AssetMaterialSetList = "BLOCK_MATERIAL_SET_LIST",
+    Cost = {
+        BuildRightTaxes = {
+            { Resource = "GOLD_COINS", Quantity = 5 }
+        }
+    }
+})
+
+-- Tiling one part
+mod:registerAsset({
+    DataType = "BUILDING_PART",
+    Id = "BLOCK_DOUBLE_TILING_ONE_PART",
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_DOUBLE_TILING_ONE_PART"
+    }
+})
+
+-- Root two part
+mod:registerAsset({
+    DataType = "BUILDING_PART",
+    Id = "BLOCK_DOUBLE_ROOT_TWO_PART",
+    Category = "DECORATION",
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_SCALER",
+        CoreObjectPrefab = "PREFAB_DOUBLE_ROOT_TWO_PART",
+        EndPart = "BLOCK_DOUBLE_TOP_PART",
+        FillerList = {
+            "BLOCK_DOUBLE_TILING_TWO_PART"
+        }
+    }
+})
+
+-- Tiling two part
+mod:registerAsset({
+    DataType = "BUILDING_PART",
+    Id = "BLOCK_DOUBLE_TILING_TWO_PART",
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_DOUBLE_TILING_TWO_PART"
+    }
+})
+
+-- End part
+mod:registerAsset({
+    DataType = "BUILDING_PART",
+    Id = "BLOCK_DOUBLE_TOP_PART",
+    ConstructorData = {
+        DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+        CoreObjectPrefab = "PREFAB_DOUBLE_TOP_PART"
+    }
+})
+
+
 -- Create an event asset
 mod:registerAsset({
     DataType = "EVENT",
@@ -183,7 +294,8 @@ mod:registerAsset({
             DataType = "GAME_ACTION_UNLOCK_BUILDING_LIST",
             BuildingProgressData = {
                 AssetBuildingList = {
-                    "BLOCK"
+                    "BLOCK",
+                    "BLOCK_DOUBLE"
                 }
             }
         }
