@@ -140,11 +140,14 @@ mod:registerAsset({
     },
     AssetMaterialSetList = "BLOCK_MATERIAL_SET_LIST",
     Cost = {
-		ResourceNeededList = {
-			{
-				{ Resource = "GOLD_COINS", Quantity = 5 }
-			},
-		}
+        BuildRightTaxes = {
+            { Resource = "GOLD_COINS", Quantity = 5 }
+        }
+		-- ResourceNeededList = {
+		-- 	{
+		-- 		{ Resource = "GOLD_COINS", Quantity = 5 }
+		-- 	},
+		-- }
     }
 })
 
