@@ -1,10 +1,10 @@
 {
     "BLOCK": {
         "BLOCK_NAME": "Skalbart block",
-        "BLOCK_DESC": "Ett litet, skalbart block med fästpunkter för dekorationer som lyktor, facklor, (stora) banderoller, rankor för tavernor, skorstenar, takkupor med mera. Avsett att användas vid byggande av monument (Herrgård, Slott, Kloster, Taverna, Stadstorg etc.)."
+        "BLOCK_DESC": "Ett litet, skalbart block med fästpunkter för dekorationer som lyktor, facklor, (stora) banderoller, rankor för tavernor, skorstenar, takkupor med mera. Avsett att användas vid byggande av monument (Herrgård, Slott, Kloster, Taverna, Stadstorg etc.). Steglängd: 0.3m"
     },
     "BLOCK_DOUBLE": {
         "BLOCK_DOUBLE_NAME": "Skalbart block (dubbel skalning)",
-        "BLOCK_DOUBLE_DESC": "Samma som 'Skalbart block' men med två skalningspilar. Rekommenderas starkt för högre höjder (eller om du lider av lagg) eftersom den är optimerad att minimera 'höjdjusteringsblock' när storleken ändras. Använd skalningspilen som tar 'stora' steg för att nå en ungefärlig höjd, ta sedan och finjustera med skalningspilen som tar 'små' steg."
+        "BLOCK_DOUBLE_DESC": "Samma som 'Skalbart block' men med två skalningspilar. Rekommenderas starkt för högre höjder (eller om du lider av lagg) eftersom den är optimerad att minimera 'höjdjusteringsblock' när storleken ändras. Använd skalningspilen som tar 'stora' steg för att nå en ungefärlig höjd, ta sedan och finjustera med skalningspilen som tar 'små' steg. Steglängd: 1.5m (stora) & 0.1m (små)"
     }
 }
