@@ -5,13 +5,13 @@ mod:registerAssetProcessor("models/Scalable_Attach_Cube.fbx", {
     DataType = "BUILDING_ASSET_PROCESSOR"
 })
 
--- Single scaling build part (root, tiling, top)
+-- Single scaling build parts (root, tiling, top)
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part", "PREFAB_ROOT_PART")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Tiling_Part", "PREFAB_TILING_PART")
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Top_Part", "PREFAB_TOP_PART")
 
 -- Make so the Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
-mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Attach_Major", {
+mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Root_Attach_Major", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
     MultipleOrientationCount = 8
 })
@@ -143,11 +143,6 @@ mod:registerAsset({
         BuildRightTaxes = {
             { Resource = "GOLD_COINS", Quantity = 5 }
         }
-		-- ResourceNeededList = {
-		-- 	{
-		-- 		{ Resource = "GOLD_COINS", Quantity = 5 }
-		-- 	},
-		-- }
     }
 })
 
