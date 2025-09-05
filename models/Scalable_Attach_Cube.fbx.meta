@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<meta id="d1ab4331-1f06-45ec-b651-60b3fd87998f">
+<meta id="3b9e954b-74a1-4ddf-9d50-0a07f2227d37">
 	<meta id="f6602f2e-8bf2-4883-9e69-ba8bd205f964" type="group" folder="true" name="Materials">
 		<meta id="1c2e1d3e-205f-4e08-a03a-5366d18e3e21" name="Mat_Wall_Stone_Rustic_Moss_Diff.png"/>
 		<meta id="81265a2a-cd4b-432a-be2a-4f12f97187ba" name="Mat_Castle_Modest_Wall_Stone_Moss_01A_Diff.png"/>
@@ -11,7 +11,6 @@
 		<meta id="5de48edd-b16a-4f2f-9004-9399a3b8c043" name="Mat_Gen_Wall_WoodPLanks_01A_Diff.png"/>
 	</meta>
 	<meta id="fc4edca2-3d53-4647-bcc7-e2f533c3a752" type="group" folder="true" name="Meshes">
-		<meta id="e5a7f01a-ec31-468f-9f9d-95ec69de9550" name="Cube_Tex_Wall_Stone_Rustic_01A_Diff.png"/>
 		<meta id="a86a2e28-b936-4a96-8eab-5f0598805a6a" name="Dummy_Texture_01_Tex_Wall_Stone_Rustic_Moss_Diff.png"/>
 		<meta id="2010ffc8-6d12-4c9f-b77a-a674f09ee249" name="Dummy_Texture_02_Tex_Castle_Modest_Wall_Stone_Moss_01A_Diff.png"/>
 		<meta id="96a9d5db-9a01-4113-ac55-c4ade4854893" name="Dummy_Texture_03_Tex_Wall_Stone_Rustic_01A_Diff.png"/>
@@ -20,25 +19,28 @@
 		<meta id="5b2999e6-47c8-4db5-9b13-88bfd433bedd" name="Dummy_Texture_06_Tex_Gen_Wall_Stucco_02A_Diff.png"/>
 		<meta id="9d72b661-f155-4472-a921-f21449ea89c0" name="Dummy_Texture_07_Tex_Gen_Wall_Plaster_01A_Diff.png"/>
 		<meta id="2b4c2c00-b7cf-4fb7-b223-6377e39dc0d3" name="Dummy_Texture_08_Tex_Gen_Wall_WoodPLanks_01A_Diff.png"/>
+		<meta id="e41339a2-f61c-4631-9486-20772d3f5e92" name="Double_Root_One_Cube_Tex_Wall_Stone_Rustic_01A_Diff.png"/>
+		<meta id="04b3200a-3605-4c39-954b-6f951c88b96b" name="Double_Top_Cube_Tex_Wall_Stone_Rustic_01A_Diff.png"/>
 	</meta>
 	<meta id="6af25dd2-b01f-40ea-9993-3d97600d0935" name="Prefab">
 		<meta id="4b92840f-e52f-45fc-bd7c-c1e98227881f" name="Root_Part">
-			<meta id="48db3493-aeeb-4285-af53-ebe9dd2b2cf4" name="Attach_Bottom"/>
-			<meta id="c0bbbb57-46da-46d1-9d6f-6ae4594827a6" name="Attach_Top"/>
-			<meta id="5c249ba4-95e8-4e3d-887b-cd6cc5d369b3" name="Attach_Major"/>
+			<meta id="db44b387-8e7b-443a-a6c9-dce0dd5649e1" name="Root_Attach_Bottom"/>
+			<meta id="be6ca509-51d9-43dc-83ec-77f5ae4f0b0d" name="Root_Attach_Major"/>
+			<meta id="dc8c228f-dbec-4f02-9311-3e7df99a3af9" name="Root_Attach_Top"/>
 		</meta>
 		<meta id="a209de6b-7593-483d-a7cb-c0f798fb6913" name="Tiling_Part">
-			<meta id="ca79c2c3-67c2-40e5-b318-477d7ced97eb" name="Attach_Top.002"/>
-			<meta id="b5f88b96-8f69-4a21-8351-b7438f77b4c0" name="Attach_Bottom.002"/>
+			<meta id="a24e98ad-4bdb-4f7e-ad60-5d852f33942d" name="Tiling_Attach_Bottom"/>
+			<meta id="7e2ccc39-e8ae-40d5-9b1a-275d20056a86" name="Tiling_Attach_Top"/>
 		</meta>
 		<meta id="f4d9bc4a-8769-4582-811f-d96b2c9b2a36" name="Top_Part">
-			<meta id="024e3cf3-a178-45fe-a61a-4104d7dc4b18" name="Cube"/>
-			<meta id="69f490cf-a5e2-4df4-9689-57c8114bfa5b" name="Attach_Bottom.003"/>
-			<meta id="0f76bebb-f535-44f1-b8ca-516fe5a96e5e" name="Attach_Minor"/>
-			<meta id="bbcd42f2-0ec4-4c39-ac03-dd47b72d5183" name="Attach_Minor.001"/>
-			<meta id="e8016743-1934-419b-af45-699bf75ed256" name="Attach_Minor.002"/>
-			<meta id="5c75678a-5b60-4924-89ec-058d198f1f7f" name="Attach_Minor.003"/>
-			<meta id="75567b86-e7ab-44ea-a0e3-d20e1f4921b6" name="Attach_Top_Minor_Dormer_Chimney"/>
+			<meta id="98cb947a-53c3-4aac-8b15-69bd35279ed9" name="Top_Attach_Bottom"/>
+			<meta id="0b6a7ba2-aa89-4dcc-91e1-84981b8455ea" name="Top_Attach_Minor_Center"/>
+			<meta id="45dfee2e-28b2-42be-b3d9-922574463c48" name="Top_Attach_Minor_Vines"/>
+			<meta id="5b1997b9-a0b9-4646-a259-2ab749918b9f" name="Top_Attach_Minor_Vines.001"/>
+			<meta id="64b56d88-da40-42a4-ac8b-4572f5b2a75b" name="Top_Attach_Minor_Vines.002"/>
+			<meta id="455c92f4-510d-4b47-8f6e-10e55f926e78" name="Top_Attach_Minor_Vines.003"/>
+			<meta id="71a8d58f-01e1-42da-96e5-f37cda46d7b2" name="Top_Attach_Top_Minor_Dormer_Chimney"/>
+			<meta id="7c89a63a-0a6e-4fef-bbf5-2035c0d617b0" name="Top_Cube"/>
 		</meta>
 		<meta id="18aae027-7e60-46c5-bdad-e914def10160" name="Dummy_Texture_01"/>
 		<meta id="c3fb5bab-e92f-4cef-b154-5fa0c37f1898" name="Dummy_Texture_02"/>
@@ -48,11 +50,40 @@
 		<meta id="184b8102-697a-49ef-a057-f364db3e79be" name="Dummy_Texture_06"/>
 		<meta id="5b0ae862-3eab-430f-9f29-2985e582d141" name="Dummy_Texture_07"/>
 		<meta id="ea0a9f4b-a033-44b1-9185-c681b7599c00" name="Dummy_Texture_08"/>
+		<meta id="caa95a40-cdb7-4a88-b9b1-69deb89f318c" name="Double_Root_One_Part">
+			<meta id="0a5c1e6e-b42a-44af-869d-8a05a52a1971" name="Double_Root_One_Attach_Bottom"/>
+			<meta id="33899060-a2d9-41ed-912e-0baf4262fb7a" name="Double_Root_One_Attach_Major"/>
+			<meta id="fc2c6f66-7317-4a02-883f-8c815c353c2d" name="Double_Root_One_Attach_Top"/>
+			<meta id="71945b02-cecf-4fca-80fa-cccf48e6e142" name="Double_Root_One_Cube"/>
+		</meta>
+		<meta id="c5b7e66e-0ee3-4270-ab40-f83fdfe12902" name="Double_Root_Two_Part">
+			<meta id="0a09a576-013f-4457-afa8-c0472eaa00d1" name="Double_Root_Two_Attach_Bottom"/>
+			<meta id="b09cac36-cd4d-4051-a947-f77000539db4" name="Double_Root_Two_Attach_Major"/>
+			<meta id="2271a86e-1909-46ba-b3f0-cdd4538b17a1" name="Double_Root_Two_Attach_Top"/>
+		</meta>
+		<meta id="f9aabbe0-e7b0-4fe3-a5cc-7b633df7bb53" name="Double_Tiling_One_Part">
+			<meta id="60e35cd8-5cd4-4619-9117-398127279d7b" name="Double_Tiling_One_Attach_Bottom"/>
+			<meta id="3b489fe4-af2c-4670-b476-eb1ab5aa932c" name="Double_Tiling_One_Attach_Top"/>
+		</meta>
+		<meta id="8947f1f8-fb2f-49ed-a6d0-df6381ebd80a" name="Double_Tiling_Two_Part">
+			<meta id="d9c10eb7-9b72-4bf2-9c88-7526144be7d6" name="Double_Tiling_Two_Attach_Bottom"/>
+			<meta id="3d21c9d1-ee8d-49c5-99db-43369dd12221" name="Double_Tiling_Two_Attach_Top"/>
+		</meta>
+		<meta id="95f0bcca-9bdf-4270-bdf5-72d0ce42b658" name="Double_Top_Part">
+			<meta id="d68795a4-bca8-4f71-ae41-6d841b133c8e" name="Double_Top_Attach_Bottom"/>
+			<meta id="1e19546e-af0b-4c0d-b236-098b053635b1" name="Double_Top_Attach_Minor_Center"/>
+			<meta id="0207c362-662e-45e7-a146-b83c2a393663" name="Double_Top_Attach_Minor_Vines"/>
+			<meta id="092162a4-eb90-4016-989c-5f6088eccb54" name="Double_Top_Attach_Minor_Vines.001"/>
+			<meta id="f2281e04-8896-42ec-a007-21f63eec673e" name="Double_Top_Attach_Minor_Vines.002"/>
+			<meta id="5cb01fd9-89e0-4613-b34d-669c0fb03551" name="Double_Top_Attach_Minor_Vines.003"/>
+			<meta id="8ec1391c-c10d-4e17-a23a-b9eb780fddaa" name="Double_Top_Attach_Top_Minor_Dormer_Chimney"/>
+			<meta id="7fa00d7c-4d12-4f16-b760-467cc7639d84" name="Double_Top_Cube"/>
+		</meta>
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
 	<WorkFilePath value="utf8:"/>
-	<Md5Checksum value="bb7da5aee0902816d1b65cb7328e5b8e"/>
+	<Md5Checksum value="ea6d69b55a8fcaa5a730944eceb8dd3f"/>
 	<ModelVersion value="36"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
@@ -73,17 +104,17 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Bottom"/>
+						<NodeName value="Root_Attach_Bottom"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Top"/>
+						<NodeName value="Root_Attach_Major"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Major"/>
+						<NodeName value="Root_Attach_Top"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Root_Part"/>
@@ -94,12 +125,12 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Top.002"/>
+						<NodeName value="Tiling_Attach_Bottom"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Bottom.002"/>
+						<NodeName value="Tiling_Attach_Top"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Tiling_Part"/>
@@ -110,37 +141,42 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Cube"/>
+						<NodeName value="Top_Attach_Bottom"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Bottom.003"/>
+						<NodeName value="Top_Attach_Minor_Center"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Minor"/>
+						<NodeName value="Top_Attach_Minor_Vines"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Minor.001"/>
+						<NodeName value="Top_Attach_Minor_Vines.001"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Minor.002"/>
+						<NodeName value="Top_Attach_Minor_Vines.002"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Minor.003"/>
+						<NodeName value="Top_Attach_Minor_Vines.003"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Top_Minor_Dormer_Chimney"/>
+						<NodeName value="Top_Attach_Top_Minor_Dormer_Chimney"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Top_Cube"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Top_Part"/>
@@ -184,6 +220,131 @@
 				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 				<ChildList/>
 				<NodeName value="Dummy_Texture_08"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Root_One_Attach_Bottom"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Root_One_Attach_Major"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Root_One_Attach_Top"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Root_One_Cube"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Double_Root_One_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Root_Two_Attach_Bottom"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Root_Two_Attach_Major"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Root_Two_Attach_Top"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Double_Root_Two_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Tiling_One_Attach_Bottom"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Tiling_One_Attach_Top"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Double_Tiling_One_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Tiling_Two_Attach_Bottom"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Tiling_Two_Attach_Top"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Double_Tiling_Two_Part"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Attach_Bottom"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Attach_Minor_Center"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Attach_Minor_Vines"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Attach_Minor_Vines.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Attach_Minor_Vines.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Attach_Minor_Vines.003"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Attach_Top_Minor_Dormer_Chimney"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Double_Top_Cube"/>
+					</Item>
+				</ChildList>
+				<NodeName value="Double_Top_Part"/>
 			</Item>
 		</ChildList>
 		<NodeName value="Prefab"/>
