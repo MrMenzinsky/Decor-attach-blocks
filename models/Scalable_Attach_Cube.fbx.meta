@@ -34,11 +34,12 @@
 		<meta id="f4d9bc4a-8769-4582-811f-d96b2c9b2a36" name="Top_Part">
 			<meta id="024e3cf3-a178-45fe-a61a-4104d7dc4b18" name="Cube"/>
 			<meta id="69f490cf-a5e2-4df4-9689-57c8114bfa5b" name="Attach_Bottom.003"/>
-			<meta id="0f76bebb-f535-44f1-b8ca-516fe5a96e5e" name="Attach_Minor"/>
-			<meta id="bbcd42f2-0ec4-4c39-ac03-dd47b72d5183" name="Attach_Minor.001"/>
-			<meta id="e8016743-1934-419b-af45-699bf75ed256" name="Attach_Minor.002"/>
-			<meta id="5c75678a-5b60-4924-89ec-058d198f1f7f" name="Attach_Minor.003"/>
 			<meta id="75567b86-e7ab-44ea-a0e3-d20e1f4921b6" name="Attach_Top_Minor_Dormer_Chimney"/>
+			<meta id="4bf849e3-eda9-4d84-9698-6176f9c70326" name="Attach_Minor_Center"/>
+			<meta id="202076de-a0a1-4b90-9799-107d6020fa06" name="Attach_Minor_Vines"/>
+			<meta id="9d82c5b9-034d-468d-8222-f84aeb40f6b9" name="Attach_Minor_Vines.001"/>
+			<meta id="fc90cb53-0d30-479f-a0b0-71d72845a198" name="Attach_Minor_Vines.002"/>
+			<meta id="049d06bb-cb34-4e1f-ad6b-1e386eeca08c" name="Attach_Minor_Vines.003"/>
 		</meta>
 		<meta id="18aae027-7e60-46c5-bdad-e914def10160" name="Dummy_Texture_01"/>
 		<meta id="c3fb5bab-e92f-4cef-b154-5fa0c37f1898" name="Dummy_Texture_02"/>
@@ -52,7 +53,7 @@
 </meta>
 <importer type="GamCFbxImporterConfiguration">
 	<WorkFilePath value="utf8:"/>
-	<Md5Checksum value="bb7da5aee0902816d1b65cb7328e5b8e"/>
+	<Md5Checksum value="44992ead2311f6f7c8579d7a82bf02be"/>
 	<ModelVersion value="36"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
@@ -120,27 +121,32 @@
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>
-						<NodeName value="Attach_Minor"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="Attach_Minor.001"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="Attach_Minor.002"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="Attach_Minor.003"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
 						<NodeName value="Attach_Top_Minor_Dormer_Chimney"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor_Center"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor_Vines"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor_Vines.001"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor_Vines.002"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Minor_Vines.003"/>
 					</Item>
 				</ChildList>
 				<NodeName value="Top_Part"/>
