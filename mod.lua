@@ -7,12 +7,12 @@ mod:registerAssetProcessor("models/Scalable_Attach_Cube.fbx", {
 
 
 -- Single scaling build parts (root, tiling, top)
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part", "PREFAB_ROOT_PART")
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Tiling_Part", "PREFAB_TILING_PART")
-mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Top_Part", "PREFAB_TOP_PART")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Single_Root_Part", "PREFAB_SINGLE_ROOT_PART")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Single_Tiling_Part", "PREFAB_SINGLE_TILING_PART")
+mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Single_Top_Part", "PREFAB_SINGLE_TOP_PART")
 
 -- Make so the Root_Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
-mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Root_Part/Root_Attach_Major", {
+mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Single_Root_Part/Attach_Major", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
     MultipleOrientationCount = 8
 })
@@ -26,7 +26,7 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Double_Tiling_Two_Pa
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Double_Top_Part", "PREFAB_DOUBLE_TOP_PART")
 
 -- Make so the Double_Root_One_Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
-mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Double_Root_One_Part/Double_Root_One_Attach_Major", {
+mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Double_Root_One_Part/Attach_Major", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
     MultipleOrientationCount = 8
 })
@@ -124,7 +124,7 @@ mod:registerAsset({
     Name = "BLOCK_NAME",
     Description = "BLOCK_DESC",
     BuildingType = "DECORATION",
-    AssetCoreBuildingPart = "BLOCK_ROOT_PART"
+    AssetCoreBuildingPart = "BLOCK_SINGLE_ROOT_PART"
 })
 
 mod:registerAsset({
@@ -142,14 +142,14 @@ mod:registerAsset({
 -- Root (main) part
 mod:registerAsset({
     DataType = "BUILDING_PART",
-    Id = "BLOCK_ROOT_PART",
+    Id = "BLOCK_SINGLE_ROOT_PART",
     Category = "DECORATION",
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_SCALER",
-        CoreObjectPrefab = "PREFAB_ROOT_PART",
-        EndPart = "BLOCK_TOP_PART",
+        CoreObjectPrefab = "PREFAB_SINGLE_ROOT_PART",
+        EndPart = "BLOCK_SINGLE_TOP_PART",
         FillerList = {
-            "BLOCK_TILING_PART"
+            "BLOCK_SINGLE_TILING_PART"
         },
         MiniatureConfig = {
             CameraPosition = { 0.0, 0.25, -2.0 }
@@ -177,20 +177,20 @@ mod:registerAsset({
 -- Tiling part
 mod:registerAsset({
     DataType = "BUILDING_PART",
-    Id = "BLOCK_TILING_PART",
+    Id = "BLOCK_SINGLE_TILING_PART",
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-        CoreObjectPrefab = "PREFAB_TILING_PART"
+        CoreObjectPrefab = "PREFAB_SINGLE_TILING_PART"
     }
 })
 
 -- End part
 mod:registerAsset({
     DataType = "BUILDING_PART",
-    Id = "BLOCK_TOP_PART",
+    Id = "BLOCK_SINGLE_TOP_PART",
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
-        CoreObjectPrefab = "PREFAB_TOP_PART"
+        CoreObjectPrefab = "PREFAB_SINGLE_TOP_PART"
     }
 })
 
