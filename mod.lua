@@ -143,6 +143,8 @@ mod:registerAsset({
 mod:registerAsset({
     DataType = "BUILDING_PART",
     Id = "BLOCK_SINGLE_ROOT_PART",
+    Name = "BLOCK_NAME",
+    Description = "BLOCK_DESC",
     Category = "DECORATION",
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_SCALER",
@@ -201,6 +203,8 @@ mod:registerAsset({
 mod:registerAsset({
     DataType = "BUILDING_PART",
     Id = "BLOCK_DOUBLE_ROOT_ONE_PART",
+    Name = "BLOCK_DOUBLE_NAME",
+    Description = "BLOCK_DOUBLE_DESC",
     Category = "DECORATION",
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_SCALER",
