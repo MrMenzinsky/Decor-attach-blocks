@@ -12,7 +12,7 @@ mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Single_Tiling_Part",
 mod:registerAssetId("models/Scalable_Attach_Cube.fbx/Prefab/Single_Top_Part", "PREFAB_SINGLE_TOP_PART")
 
 -- Make so the Root_Attach_Major snapping node can snap at all four 90 degree angles and isn't forced to its original orientation
-mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Single_Root_Part/Attach_Major", {
+mod:registerPrefabComponent("models/Scalable_Attach_Cube.fbx/Prefab/Single_Root_Part/Attach_Major.001", {
     DataType = "COMP_BUILDING_ATTACH_NODE",
     MultipleOrientationCount = 8
 })
